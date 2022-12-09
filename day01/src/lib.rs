@@ -37,13 +37,12 @@
 #[must_use]
 #[allow(clippy::missing_const_for_fn)]
 pub fn solve_part_one(data: &str) -> usize {
-	data.trim().split("\n\n")
-		.map(|elf_inv_str| elf_inv_str.split('\n')
-			 .map(|cal| str::parse::<usize>(cal).unwrap())
-			 .sum()
-		)
-		.max()
-		.expect("No values found!!")
+    data.split("\n\n")
+        .map(|s| s.split('\n')
+             .map(|i| i.parse::<usize>().unwrap())
+             .sum())
+        .max()
+        .expect("Something went wrong!")
 }
 
 /// Solve Advent of Code day 01 part two
@@ -69,13 +68,14 @@ pub fn solve_part_one(data: &str) -> usize {
 #[must_use]
 #[allow(clippy::missing_const_for_fn)]
 pub fn solve_part_two(data: &str) -> usize {
-	let mut top = data.trim().split("\n\n")
-		.map(|elf_inv_str| elf_inv_str.split('\n')
-			 .map(|cal| str::parse::<usize>(cal).unwrap())
-			 .sum::<usize>()
-		)
-		.collect::<Vec<usize>>();
-	top.sort_by(|a, b| b.partial_cmp(a).unwrap());
-	top.iter().take(3).sum()
+    let mut v = data.split("\n\n")
+        .map(|s| s.split('\n')
+             .map(|i| i.parse::<usize>().unwrap())
+             .sum())
+        .collect::<Vec<usize>>();
+    v.sort_by(|a, b| b.cmp(a));
+    v.iter()
+      .take(3)
+      .sum::<usize>()
 }
 
