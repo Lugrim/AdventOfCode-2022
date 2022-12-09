@@ -2,7 +2,7 @@
 name = "day07"
 version = "0.1.0"
 edition = "2021"
-authors = ["Lux Amelia Phifollen"]
+authors = ["Lugrim"]
 description = "My Rust solutions for day 07 of Advent of Code 2022"
 keywords = ["algorithmics", "advent-of-code"]
 categories = ["algorithmics"]
@@ -13,8 +13,6 @@ readme = "../README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-lazy_static = "*"
-regex = "*"
 
 [dependencies.common]
 path = "../common"

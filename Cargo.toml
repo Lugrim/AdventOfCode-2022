@@ -2,7 +2,7 @@
 name = "aoc2022"
 version = "0.0.1"
 edition = "2021"
-authors = ["Lux Amelia Phifollen"]
+authors = ["Lugrim"]
 description = "My Rust solutions for the Advent of Code puzzles (2022)"
 keywords = ["algorithmics", "advent-of-code"]
 categories = ["algorithms"]

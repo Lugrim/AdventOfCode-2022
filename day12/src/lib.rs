@@ -13,14 +13,14 @@
 #![deny(missing_docs)]
 #![deny(rustdoc::missing_crate_level_docs)]
 
-// Change this on the day you start working on the puzzle
+//FIXME: Change this on the day you start working on the puzzle
 #![allow(unused_variables)]
 
 /// Solve Advent of Code day 12 part one
 ///
 /// # Arguments
 ///
-///  - `data` : a `&str` that holds both numbers for today's input.
+///  - `data` : a `&str` that holds the input for today's puzzle
 ///
 /// # Return value
 ///
@@ -33,14 +33,14 @@
 #[must_use]
 #[allow(clippy::missing_const_for_fn)]
 pub fn solve_part_one(data: &str) -> usize {
-    0
+	0
 }
 
 /// Solve Advent of Code day 12 part two
 ///
 /// # Arguments
 ///
-///  - `data` : a `&str` that holds both numbers for today's input.
+///  - `data` : a `&str` that holds the input for today's puzzle
 ///
 /// # Return value
 ///
@@ -53,6 +53,7 @@ pub fn solve_part_one(data: &str) -> usize {
 #[must_use]
 #[allow(clippy::missing_const_for_fn)]
 pub fn solve_part_two(data: &str) -> usize {
-    0
+	0
 }
 
+// vim: set tw=80:

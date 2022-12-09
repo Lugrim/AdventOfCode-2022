@@ -2,7 +2,7 @@
 name = "day12"
 version = "0.1.0"
 edition = "2021"
-authors = ["Lux Amelia Phifollen"]
+authors = ["Lugrim"]
 description = "My Rust solutions for day 12 of Advent of Code 2022"
 keywords = ["algorithmics", "advent-of-code"]
 categories = ["algorithmics"]

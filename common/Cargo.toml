@@ -2,7 +2,7 @@
 name = "common"
 version = "0.1.0"
 edition = "2021"
-authors = ["Lux Amelia Phifollen"]
+authors = ["Lugrim"]
 description = "The common boilerplate code for my Advent of Code Rust solutions"
 license = "ACSL"
 repository = "https://github.com/Lymkwi/AdventOfCode-2022/"
