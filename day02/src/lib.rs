@@ -13,9 +13,6 @@
 #![deny(missing_docs)]
 #![deny(rustdoc::missing_crate_level_docs)]
 
-//FIXME: Change this on the day you start working on the puzzle
-#![allow(unused_variables)]
-
 /// Solve Advent of Code day 02 part one
 ///
 /// # Arguments
@@ -33,7 +30,10 @@
 #[must_use]
 #[allow(clippy::missing_const_for_fn)]
 pub fn solve_part_one(data: &str) -> usize {
-	0
+    data.trim().split('\n')
+        .map(|s| (s.chars().nth(0).unwrap() as i8 - 65, s.chars().nth(2).unwrap() as i8 - 88))
+        .map(|(l, r)| ((r+1) + ((r-l+4) % 3) * 3) as usize)
+        .sum()
 }
 
 /// Solve Advent of Code day 02 part two
@@ -53,7 +53,10 @@ pub fn solve_part_one(data: &str) -> usize {
 #[must_use]
 #[allow(clippy::missing_const_for_fn)]
 pub fn solve_part_two(data: &str) -> usize {
-	0
+    data.trim().split('\n')
+        .map(|s| (s.chars().nth(0).unwrap() as i8 - 65, s.chars().nth(2).unwrap() as i8 - 88))
+        .map(|(l, r)| ((((l+r+2) % 3) + 1) + (r * 3)) as usize)
+        .sum()
 }
 
 // vim: set tw=80:

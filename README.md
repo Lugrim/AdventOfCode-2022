@@ -13,21 +13,22 @@ This code in organized with :
 
 Stars obtained :
 ```
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 ⭐⭐⭐⭐⬛⬛⬛⬛⬛⬛
+⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
 ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
 ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
 ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
 ```
 
-Run times (on a ThinkPad X230 with Intel i7-3520M) :
+Run times (on a Dell Precision 3571 with an i7-12700H) :
 |        | Day 01 | Day 02 | Day 03 | Day 04 | Day 05 |
 |--------|--------|--------|--------|--------|--------|
-| Part 1 | 53.8 µs|  110 µs|  345 µs|   109 µs|99.5 µs|
-| Part 2 | 66.0 µs|  110 µs|  687 µs|   103 µs| 108 µs|
+| Part 1 | 27.3 µs| 18.8 µs|        |        |        |
+| Part 2 | 30.6 µs| 29.0 µs|        |        |        |
 |        |**Day 06**|**Day 07**|**Day 08**|**Day 09**|**Day 10**|
-| Part 1 | 6.34 µs|        |        |        |        |
-| Part 2 |  732 µs|        |        |        |        |
+| Part 1 |        |        |        |        |        |
+| Part 2 |        |        |        |        |        |
 |        |**Day 11**|**Day 12**|**Day 13**|**Day 14**|**Day 15**|
 | Part 1 |        |        |        |        |        |
 | Part 2 |        |        |        |        |        |
