@@ -33,7 +33,25 @@
 #[must_use]
 #[allow(clippy::missing_const_for_fn)]
 pub fn solve_part_one(data: &str) -> usize {
-	0
+    data.split('\n')
+        .map(|s| (s.chars().take(s.chars().count()/2), s.chars().skip(s.chars().count()/2)))
+        .map(|(mut a, mut b)| bitflags(&mut a) & bitflags(&mut b))
+        .map(|a| a.trailing_zeros())
+        .fold(0, |acc, i| acc + i)
+        .try_into()
+        .unwrap()
+}
+
+fn priority(c: u8) -> u8 {
+    if c >= 65 && c <=90 {
+        c - 38
+    } else {
+        c - 96
+    }
+}
+
+fn bitflags(data: &mut dyn std::iter::Iterator<Item=char>) -> u64 {
+    data.fold(0, |a, c| a | 1 << priority(c as u8))
 }
 
 /// Solve Advent of Code day 03 part two
@@ -53,7 +71,17 @@ pub fn solve_part_one(data: &str) -> usize {
 #[must_use]
 #[allow(clippy::missing_const_for_fn)]
 pub fn solve_part_two(data: &str) -> usize {
-	0
+    data.split('\n')
+        .collect::<Vec<&str>>()[..]
+        .windows(3)
+        .step_by(3)
+        .map(|a| bitflags(&mut a[0].chars())
+            & bitflags(&mut a[1].chars())
+            & bitflags(&mut a[2].chars()))
+        .map(|a| a.trailing_zeros())
+        .fold(0, |acc, i| acc + i)
+        .try_into()
+        .unwrap()
 }
 
 // vim: set tw=80:
