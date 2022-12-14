@@ -13,7 +13,7 @@ This code in organized with :
 
 Stars obtained :
 ```
-⭐⭐⭐⭐⭐⭐⬛⬛⬛⬛
+⭐⭐⭐⭐⭐⭐⭐⭐⬛⬛
 ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
 ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
 ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
@@ -24,8 +24,8 @@ Stars obtained :
 Run times (on a Dell Precision 3571 with an i7-12700H) :
 |        | Day 01 | Day 02 | Day 03 | Day 04 | Day 05 |
 |--------|--------|--------|--------|--------|--------|
-| Part 1 | 27.3 µs| 18.8 µs|  28.6µs|        |        |
-| Part 2 | 30.6 µs| 29.0 µs|  26.6µs|        |        |
+| Part 1 | 27.3 µs| 18.8 µs| 28.6 µs| 45.4 µs|        |
+| Part 2 | 30.6 µs| 29.0 µs| 26.6 µs| 45.9 µs|        |
 |        |**Day 06**|**Day 07**|**Day 08**|**Day 09**|**Day 10**|
 | Part 1 |        |        |        |        |        |
 | Part 2 |        |        |        |        |        |
